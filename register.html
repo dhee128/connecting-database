@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: aliceblue;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+            margin: 50px auto;
+            width: 300px;
+        }
+        .container label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            display: block;
+            color: #333;
+        }
+        .container input[type="text"],
+        .container input[type="password"],
+        .container input[type="email"],
+        .container input[type="tel"],
+        .container select[id="city"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 55px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #1a6613;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        button:hover {
+            background-color: #0e801f;
+        }
+        button:hover {
+            background: linear-gradient(to right, rgb(18, 171, 18), #09a320);
+        }
+        .toggle-form {
+            margin-top: 20px;
+            cursor: pointer;
+            color: #2f00ff;
+        }
+        .alert-message {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <h2>Register</h2>
+            <form id="submit-container" action="index.php" method="POST">
+                <input type="text" name="username" id="username" placeholder="Enter Your Username" required><br><br>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required><br><br>
+                <input type="tel" name="Contact" id="Contact" placeholder="Contact Details" required><br><br>
+                <input type="text" name="Address" id="Address" placeholder="Enter Your Address" required><br><br>
+                <select id="city" name="city">
+                    <option value="">Select your city</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="coimbatore">Coimbatore</option>
+                    <option value="madurai">Madurai</option>
+                    <option value="trichy">Tiruchirappalli (Trichy)</option>
+                    <option value="salem">Salem</option>
+                    <option value="tirunelveli">Tirunelveli</option>
+                    <option value="vellore">Vellore</option>
+                    <option value="thanjavur">Thanjavur</option>
+                    <option value="ooty">Ooty (Udhagamandalam)</option>
+                    <option value="erode">Erode</option>
+                    <option value="tiruppur">Tiruppur</option>
+                    <option value="kanyakumari">Kanyakumari</option>
+                    <option value="karur">Karur</option>
+                    <option value="dindigul">Dindigul</option>
+                    <option value="cuddalore">Cuddalore</option>
+                    <option value="nagercoil">Nagercoil</option>
+                    <option value="hosur">Hosur</option>
+                    <option value="sivakasi">Sivakasi</option>
+                    <option value="thoothukudi">Thoothukudi (Tuticorin)</option>
+                    <option value="rajapalayam">Rajapalayam</option>
+                </select><br><br>
+                <input type="password" name="password" id="password" placeholder="Enter Your Password" required><br><br>
+                <button type="submit">Register</button>
+            </form>
+        </center>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
